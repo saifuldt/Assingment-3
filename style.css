@@ -1,0 +1,1505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+@media only screen and (max-width: 375px){
+
+    /* nav/menu */
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+    }
+
+    .logo a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+     .menu {
+        display:none;
+        
+    }
+/* 
+    .menu ul li {
+        list-style: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: rgb(84, 77, 77);
+    }
+
+    .menu ul li a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(168, 165, 165);
+        padding: 10px;
+    } */
+
+    /* header */
+
+    .heade {
+        width:300px;
+        height: 615px;
+        background-image: url(./assets/images/mac.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 30px;
+    }
+
+    .head-text {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .head-text h1 {
+        color: white;
+        font-size: 50px;
+    }
+
+    .head-text p {
+        font-size: 18px;
+        color: white;
+    }
+
+    .head-text button {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(42, 40, 40);
+        background-color: gray;
+        font-size: 18px;
+    }
+
+    .head-text button:hover {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(42, 40, 40);
+        background-color: rgb(247, 239, 239);
+        font-size: 18px;
+    }
+
+    .head-icon {
+        padding-bottom: 10px;
+    }
+
+    .head-icon i {
+        color: gray;
+
+    }
+
+    .head-icon i:hover {
+        color: rgb(211, 208, 208);
+        cursor: pointer;
+
+    }
+
+    /* **Main** */
+    /* About */
+    .about-container {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .about-text {
+        margin-top: 30px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    /* all h2 css */
+    .about-text h2,
+    .design h2,
+    .team-text h2,
+    .work-text h2,
+    .skill-text h2,
+    .pricing h2,
+    .contact h2 {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    /* all paragraf css */
+    .about-text p,
+    .design p,
+    .team-text p,
+    .work-text p,
+    .skill-text p,
+    .pricing p,
+    .contact p {
+        font-size: 18px;
+    }
+
+    .about-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .single-icon i {
+        font-size: 64px;
+
+    }
+
+    .single-icon h6 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    /* design */
+
+    .design {
+        height: auto;
+        width: 375px;
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f1f1f1;
+        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+
+    .design img {
+        max-width: 375px;;
+        height: auto;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .design button {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+    }
+
+    .design button:hover {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(26, 25, 25);
+        background-color: gray;
+        font-size: 18px;
+    }
+
+
+    /* team */
+    .team {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .team-text {
+        text-align: center;
+    }
+
+    .team-membar {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .single-team-member {
+        box-shadow: 1px 3px 3px 2px rgb(185, 179, 179);
+        width: 315px;
+    }
+
+    .single-team-member img {
+        width: 315px;
+        filter: grayscale(60%);
+    }
+
+    .single-team-member h2,
+    .single-team-member h6,
+    .single-team-member p {
+        padding: 10px;
+    }
+
+    .single-team-member h2 {
+        font-size: 20px;
+    }
+
+    .single-team-member h6 {
+        font-size: 16px;
+        color: gray;
+    }
+
+    .single-team-member button {
+        width: 90%;
+        height: 50px;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: rgb(221, 218, 218);
+        font-size: 18px;
+        text-align: center;
+        border-color: transparent;
+    }
+
+    .single-team-member button:hover {
+        /* width: 100%; */
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: rgb(157, 154, 154);
+        font-size: 18px;
+
+    }
+
+
+    /* count */
+
+    .count {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(90, 89, 89);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .count h2 {
+        font-size: 34px;
+    }
+
+    /* work */
+
+    .work {
+        height: auto;
+        margin-top: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .work-img {
+        /* overflow: scroll; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* position: relative; */
+    }
+
+    /* .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .work-img img:hover {
+        opacity: 0.5;
+    } */
+
+
+
+    /* skill */
+
+    .skills {
+        max-width: 375px;;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 30px;
+        background-color: #f1f1f1;
+    }
+
+    /* .skill-text {
+        width: 50%;
+    }
+
+    .skill-meter {
+        width: 50%;
+    } */
+
+    .single-meter2{
+        display: none;
+    }
+
+    .skill-meter progress {
+        max-width: 300px;
+        height: 30px;
+        color: gray;
+        border-radius: 0px;
+
+    }
+
+    .skill-meter progress[value]::-webkit-progress-bar {
+        background-color: #d0cccc;
+        box-shadow: 0 0 3px #6a6464 inset;
+        color: #6a6464;
+    }
+
+    .skill-meter progress[value]::-webkit-progress-value {
+        background-color: #6a6464;
+    }
+
+
+
+    /* pricing */
+    .pricing {
+        height: auto;
+        background-color: gray;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pakege{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+        color: black;
+        text-align: center;
+
+    }
+
+    .single-pakege {
+        max-width: 375px;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .single-pakege ul li {
+        border-bottom: 1px solid rgb(210, 206, 206);
+        padding: 12px;
+        text-align: center;
+
+    }
+
+    .single-pakege span {
+        font-weight: lighter;
+        color: #2e2e2e;
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    button.li-btn{
+        width: 100%;
+        height: 100%;
+        padding:10px;
+        margin:-12px;
+    }
+
+    button.li-btn:hover {
+        background-color: #d0cccc;
+        color: black;
+    }
+
+    /* contact */
+
+    .contact {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: hsl(0, 10%, 92%);
+        padding: 20px;
+        padding-top: 80px;
+        margin-bottom: 30px;
+
+    }
+
+    .contact-address {
+        padding: 30px;
+    }
+
+    .forms {
+        text-align: start;
+    }
+
+    .forms input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .forms button {
+        background-color: black;
+        color: #d0cccc;
+        padding: 10px;
+    }
+
+    .forms button:hover {
+        background-color: #d0cccc;
+        color: black;
+    }
+
+    /* map */
+
+    .map img {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        filter: grayscale(60%);
+    }
+
+
+    /*Footer  */
+
+    .f-btn button {
+        background-color: white;
+        color: black;
+
+        padding: 10px;
+    }
+
+    .f-btn button:hover {
+        background-color: rgb(229, 226, 226);
+        /* color: #d0cccc; */
+    }
+
+    .f-icons {
+        font-size: 25px;
+    }
+
+    .f-icons i:hover {
+        color: #c0bdbd;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* nav/menu */
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+    }
+
+    .logo a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .menu ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu ul li {
+        list-style: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: rgb(84, 77, 77);
+    }
+
+    .menu ul li a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(168, 165, 165);
+        padding: 10px;
+    }
+
+    /* header */
+
+    .heade {
+        width:100%;
+        height: 615px;
+        background-image: url(./assets/images/mac.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 30px;
+    }
+
+    .head-text {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .head-text h1 {
+        color: white;
+        font-size: 50px;
+    }
+
+    .head-text p {
+        font-size: 18px;
+        color: white;
+    }
+
+    .head-text button {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(42, 40, 40);
+        background-color: gray;
+        font-size: 18px;
+    }
+
+    .head-text button:hover {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(42, 40, 40);
+        background-color: rgb(247, 239, 239);
+        font-size: 18px;
+    }
+
+    .head-icon {
+        padding-bottom: 10px;
+    }
+
+    .head-icon i {
+        color: gray;
+
+    }
+
+    .head-icon i:hover {
+        color: rgb(211, 208, 208);
+        cursor: pointer;
+
+    }
+
+    /* **Main** */
+    /* About */
+    .about-container {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .about-text {
+        margin-top: 30px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    /* all h2 css */
+    .about-text h2,
+    .design h2,
+    .team-text h2,
+    .work-text h2,
+    .skill-text h2,
+    .pricing h2,
+    .contact h2 {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    /* all paragraf css */
+    .about-text p,
+    .design p,
+    .team-text p,
+    .work-text p,
+    .skill-text p,
+    .pricing p,
+    .contact p {
+        font-size: 18px;
+    }
+
+    .about-icons {
+        display: flex;
+        padding: 20px;
+    }
+
+    .single-icon i {
+        font-size: 64px;
+
+    }
+
+    .single-icon h6 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    /* design */
+
+    .design {
+        height: 615px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #f1f1f1;
+        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+
+    .design img {
+        width: 100%;
+        height:auto;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .design button {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+    }
+
+    .design button:hover {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(26, 25, 25);
+        background-color: gray;
+        font-size: 18px;
+    }
+
+
+    /* team */
+    .team {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .team-text {
+        text-align: center;
+    }
+
+    .team-membar {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .single-team-member {
+        box-shadow: 1px 3px 3px 2px rgb(185, 179, 179);
+        width: 315px;
+    }
+
+    .single-team-member img {
+        width: 315px;
+        filter: grayscale(60%);
+    }
+
+    .single-team-member h2,
+    .single-team-member h6,
+    .single-team-member p {
+        padding: 10px;
+    }
+
+    .single-team-member h2 {
+        font-size: 20px;
+    }
+
+    .single-team-member h6 {
+        font-size: 16px;
+        color: gray;
+    }
+
+    .single-team-member button {
+        width: 90%;
+        height: 50px;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: rgb(221, 218, 218);
+        font-size: 18px;
+        text-align: center;
+        border-color: transparent;
+    }
+
+    .single-team-member button:hover {
+        /* width: 100%; */
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: rgb(157, 154, 154);
+        font-size: 18px;
+
+    }
+
+
+    /* count */
+
+    .count {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(90, 89, 89);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .count h2 {
+        font-size: 34px;
+    }
+
+    /* work */
+
+    .work {
+        height: auto;
+        margin-top: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .work-img {
+        /* overflow: scroll; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* position: relative; */
+    }
+
+    /* .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .work-img img:hover {
+        opacity: 0.5;
+    } */
+
+
+
+    /* skill */
+
+    .skills {
+        width: 600px;;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 30px;
+        background-color: #f1f1f1;
+    }
+
+    /* .skill-text {
+        width: 50%;
+    }
+
+    .skill-meter {
+        width: 50%;
+    } */
+
+    .single-meter2{
+        display: none;
+    }
+
+    .skill-meter progress {
+        width: 300px;
+        height: 30px;
+        color: gray;
+        border-radius: 0px;
+
+    }
+
+    .skill-meter progress[value]::-webkit-progress-bar {
+        background-color: #d0cccc;
+        box-shadow: 0 0 3px #6a6464 inset;
+        color: #6a6464;
+    }
+
+    .skill-meter progress[value]::-webkit-progress-value {
+        background-color: #6a6464;
+    }
+
+    /* pricing */
+    .pricing {
+        height: auto;
+        background-color: gray;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pakege{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+        color: black;
+        text-align: center;
+
+    }
+
+    .single-pakege {
+        width: 400px;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .single-pakege ul li {
+        border-bottom: 1px solid rgb(210, 206, 206);
+        padding: 12px;
+        text-align: center;
+
+    }
+
+    .single-pakege span {
+        font-weight: lighter;
+        color: #2e2e2e;
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    button.li-btn{
+        width: 100%;
+        height: 100%;
+        padding:10px;
+        margin:-12px;
+    }
+
+    button.li-btn:hover {
+        background-color: #d0cccc;
+        color: black;
+    }
+
+    /* contact */
+
+    .contact {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: hsl(0, 10%, 92%);
+        padding: 20px;
+        padding-top: 80px;
+        margin-bottom: 30px;
+
+    }
+
+    .contact-address {
+        padding: 30px;
+    }
+
+    .forms {
+        text-align: start;
+    }
+
+    .forms input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .forms button {
+        background-color: black;
+        color: #d0cccc;
+        padding: 10px;
+    }
+
+    .forms button:hover {
+        background-color: #d0cccc;
+        color: black;
+    }
+
+    /* map */
+
+    .map img {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        filter: grayscale(60%);
+    }
+
+
+    /*Footer  */
+
+    .f-btn button {
+        background-color: white;
+        color: black;
+
+        padding: 10px;
+    }
+
+    .f-btn button:hover {
+        background-color: rgb(229, 226, 226);
+        /* color: #d0cccc; */
+    }
+
+    .f-icons {
+        font-size: 25px;
+    }
+
+    .f-icons i:hover {
+        color: #c0bdbd;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+
+
+    /* nav/menu */
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px;
+        position: fixed;
+        background-color: white;
+        width:100%;
+    }
+
+    .logo a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 900;
+        font-style: initial;
+    }
+
+
+    .menu ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu ul li {
+        list-style: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: rgb(84, 77, 77);
+    }
+
+    .menu ul li a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(168, 165, 165);
+        padding: 10px;
+    }
+
+    /* header */
+
+    .heade {
+        width: 1350;
+        height: 615px;
+        background-image: url(./assets/images/mac.jpg);
+        background-position: center;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 30px;
+    }
+
+    .head-text {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .head-text h1 {
+        color: white;
+        font-size: 50px;
+    }
+
+    .head-text p {
+        font-size: 18px;
+        color: white;
+    }
+
+    .head-text button {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(42, 40, 40);
+        background-color: gray;
+        font-size: 18px;
+    }
+
+    .head-text button:hover {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(42, 40, 40);
+        background-color: rgb(247, 239, 239);
+        font-size: 18px;
+    }
+
+    .head-icon {
+        padding-bottom: 10px;
+    }
+
+    .head-icon i {
+        color: gray;
+
+    }
+
+    .head-icon i:hover {
+        color: rgb(211, 208, 208);
+        cursor: pointer;
+
+    }
+
+    /* **Main** */
+    /* About */
+    .about-container {
+        width: 1350px;
+        margin-bottom: 100px;
+    }
+
+    .about-text {
+        margin-top: 30px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    /* all h2 css */
+    .about-text h2,
+    .design h2,
+    .team-text h2,
+    .work-text h2,
+    .skill-text h2,
+    .pricing h2,
+    .contact h2 {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    /* all paragraf css */
+    .about-text p,
+    .design p,
+    .team-text p,
+    .work-text p,
+    .skill-text p,
+    .pricing p,
+    .contact p {
+        font-size: 18px;
+    }
+
+    .about-icons {
+        display: flex;
+        padding: 20px;
+    }
+
+    .single-icon i {
+        font-size: 64px;
+
+    }
+
+    .single-icon h6 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    /* design */
+
+    .design {
+        height: 615px;
+        width: 1350px;
+        display: flex;
+        justify-content: center;
+        background-color: #f1f1f1;
+        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+
+    .design img {
+        width: 700px;
+        height: 394px;
+        border-radius: 8px;
+    }
+
+    .design button {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+    }
+
+    .design button:hover {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(26, 25, 25);
+        background-color: gray;
+        font-size: 18px;
+    }
+
+
+    /* team */
+    .team {
+        width: 1350px;
+        height: 615px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .team-text {
+        text-align: center;
+    }
+
+    .team-membar {
+        width: 1350px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .single-team-member {
+        box-shadow: 1px 3px 3px 2px rgb(185, 179, 179);
+        width: 315px;
+    }
+
+    .single-team-member img {
+        width: 315px;
+        filter: grayscale(60%);
+    }
+
+    .single-team-member h2,
+    .single-team-member h6,
+    .single-team-member p {
+        padding: 10px;
+    }
+
+    .single-team-member h2 {
+        font-size: 20px;
+    }
+
+    .single-team-member h6 {
+        font-size: 16px;
+        color: gray;
+    }
+
+    .single-team-member button {
+        width: 90%;
+        height: 50px;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: rgb(221, 218, 218);
+        font-size: 18px;
+        text-align: center;
+        border-color: transparent;
+    }
+
+    .single-team-member button:hover {
+        /* width: 100%; */
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: rgb(157, 154, 154);
+        font-size: 18px;
+
+    }
+
+
+    /* count */
+
+    .count {
+        width: 1350px;
+        height: 200px;
+        background-color: rgb(90, 89, 89);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .count h2 {
+        font-size: 34px;
+    }
+
+    /* work */
+
+    .work {
+        height: 615px;
+        margin-top: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .work-img {
+        overflow: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* position: relative; */
+    }
+
+    .image {
+        opacity: 1;
+        /* display: block; */
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .work-img img:hover {
+        opacity: 0.5;
+    }
+
+    /* skill */
+
+    .skills {
+        width: 1350px;
+        height: auto;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        padding: 30px;
+        background-color: #f1f1f1;
+    }
+    .single-meter2{
+        display: none;
+    }
+
+    .skill-meter progress {
+        width: 600px;
+        height: 30px;
+        color: gray;
+        border-radius: 0px;
+
+    }
+
+    .skill-meter progress[value]::-webkit-progress-bar {
+        background-color: #d0cccc;
+        box-shadow: 0 0 3px #6a6464 inset;
+        color: #6a6464;
+    }
+
+    .skill-meter progress[value]::-webkit-progress-value {
+        background-color: #6a6464;
+    }
+
+    /* pricing */
+    .pricing {
+        width: 1350px;
+        height:auto;
+        background-color: gray;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+.pakege{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+    .single-pakege {
+        width: 400px;
+        height:500px;
+    }
+
+    .single-pakege ul li {
+        border-bottom: 1px solid rgb(210, 206, 206);
+        padding: 12px;
+
+    }
+
+    .single-pakege span {
+        font-weight: lighter;
+        color: #2e2e2e;
+        font-size: 15px;
+    }
+
+    button.li-btn:hover {
+        background-color: #d0cccc;
+        color: black;
+    }
+
+    /* contact */
+
+    .contact {
+        width: 1350px;
+        height: 700px;
+        text-align: center;
+        background-color: hsl(0, 10%, 92%);
+        padding: 20px;
+        padding-top: 80px;
+        margin-bottom: 30px;
+
+    }
+
+    .contact-address {
+        padding: 30px;
+    }
+
+    .forms {
+        text-align: start;
+    }
+
+    .forms input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .forms button {
+        background-color: black;
+        color: #d0cccc;
+        padding: 10px;
+    }
+
+    .forms button:hover {
+        background-color: #d0cccc;
+        color: black;
+    }
+
+    /* map */
+
+    .map img {
+        padding: 10px;
+        width: 1350px;
+        height: 1100px;
+        filter: grayscale(60%);
+    }
+
+
+    /*Footer  */
+
+    .f-btn button {
+        background-color: white;
+        color: black;
+
+        padding: 10px;
+    }
+
+    .f-btn button:hover {
+        background-color: rgb(229, 226, 226);
+        /* color: #d0cccc; */
+    }
+
+    .f-icons {
+        font-size: 25px;
+    }
+
+    .f-icons i:hover {
+        color: #c0bdbd;
+    }
+
+}
