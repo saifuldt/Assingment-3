@@ -1,2 +1,3 @@
 ﻿# Assingment-3
-(/desktop.png)
+![Design preview for As-Sunnah Skill Development institute](./Desktop.png)
+
