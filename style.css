@@ -347,7 +347,7 @@
     /* skill */
 
     .skills {
-        max-width: 100%;
+        max-width: 375px;;
         height: auto;
         display: flex;
         justify-content: center;
