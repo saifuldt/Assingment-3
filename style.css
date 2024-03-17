@@ -5,7 +5,7 @@
     font-family: Raleway, sans-serif;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 400px){
 
     /* nav/menu */
     .nav-bar {
